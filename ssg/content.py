@@ -39,7 +39,7 @@ class Content(Mapping):
     def __len__(self):
         return len(self.data)
 
-    def __repr__(self_:
+    def __repr__(self):
         data = {}
         for key, value in self.data.items():
             if key != "content":
