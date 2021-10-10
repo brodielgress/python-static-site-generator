@@ -12,7 +12,7 @@ class Content(Mapping):
     def load(cls, string):
         _, fm, content = cls.__regex.split(string, 2)
         metadata = load(fm, Loader=FullLoader)
-        return cls(metdata, content)
+        return cls(metadata, content)
 
     def __init__(self, metadata, content):
         self.data = metadata
